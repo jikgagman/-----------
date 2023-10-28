@@ -92,9 +92,9 @@
 
         <footer>
             <form action="#">
-                <label class="resLabel" for="Registrant">등록자</label>
-                <select name="Registrants" id="Registrant">
-                    <option value="select">등록자 선택</option>
+                <!-- <label class="resLabel" for="select">등록자</label>
+                <select name="Registrants" id="select" class="select">
+                    <option value="select">등록자</option>
                     <option value="김우진">김우진</option>
                     <option value="최재성">최재성</option>
                     <option value="전지원">전지원</option>
@@ -104,32 +104,35 @@
                     <option value="김재호">김재호</option>
                     <option value="유이안">유이안</option>
                     <option value="이준혁">이준혁</option>
-                </select>
+                </select> -->
             
+                <div id="Registrant">
+                    <input type="text" required/>
+                    <label>등록자</label>
+                </div>
                 <div id="Place">
                     <input type="text" required/>
                     <label>습득장소</label>
-                    <span></span>
                 </div>
                 <div id="lostName">
                     <input type="text" required/>
                     <label>유실물</label>
-                    <span></span>
                 </div>
                 <div id="Person">
                     <input type="text" required/>
                     <label>분실자</label>
-                    <span></span>
                 </div>
                 <div id="phoneNumber">
                     <input type="text" required/>
                     <label>연락처</label>
-                    <span></span>
                 </div>
 
-                <input id="submitBtn" type="submit" value="Submit" />
+                <!-- <input id="submitBtn" type="submit" value="처리" /> -->
+                <button class="submitBtn">처리</button>
             </form>
         </footer>
     </div>
+
+    <script src="inputData.js"></script>
 </body>
 </html>
