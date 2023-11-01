@@ -5,106 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="titleIcon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>오송역 유실물 관리</title>
 </head>
 <body>
     <div id="wrap">
         <div class="container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>날짜</th>
-                        <th>등록자</th>
-                        <th>습득 장소</th>
-                        <th>유실물 이름</th>
-                        <th>분실자</th>
-                        <th>연락처</th>
-                        <th>처리</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                        <td>Cell 6</td>
-                        <td>Cell 7</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table">
+                <div class="table_header">
+                    <p id="result"></p>
+                    <div>
+                        <input placeholder="product" />
+                        <button class="add_new">+</button>
+                    </div>
+                </div>
+                <div class="table_section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>날짜</th>
+                                <th>등록자</th>
+                                <th>습득 장소</th>
+                                <th>유실물 이름</th>
+                                <th>분실자</th>
+                                <th>연락처</th>
+                                <th>보관장소</th>
+                                <th>처리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                                <td>Cell 7</td>
+                                <td>
+                                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button><i class="fa-solid fa-handshake"></i></button>
+                                    <button><i class="fa-solid fa-train"></i></button>
+                                    <button><i class="fa-solid fa-building-shield"></i></button>
+                                    <button><i class="fa-solid fa-x"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                                <td>Cell 4</td>
+                                <td>Cell 5</td>
+                                <td>Cell 6</td>
+                                <td>Cell 7</td>
+                                <td>
+                                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button><i class="fa-solid fa-handshake"></i></button>
+                                    <button><i class="fa-solid fa-train"></i></button>
+                                    <button><i class="fa-solid fa-building-shield"></i></button>
+                                    <button><i class="fa-solid fa-x"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div>
         </div>
-
-        <footer>
+            
+        <!-- <footer>
             <form action="#">
-                <!-- <label class="resLabel" for="select">등록자</label>
-                <select name="Registrants" id="select" class="select">
-                    <option value="select">등록자</option>
-                    <option value="김우진">김우진</option>
-                    <option value="최재성">최재성</option>
-                    <option value="전지원">전지원</option>
-                    <option value="김태랑">김태랑</option>
-                    <option value="박정훈">박정훈</option>
-                    <option value="임원묵">임원묵</option>
-                    <option value="김재호">김재호</option>
-                    <option value="유이안">유이안</option>
-                    <option value="이준혁">이준혁</option>
-                </select> -->
             
                 <div id="Registrant">
                     <input type="text" required/>
@@ -126,13 +97,12 @@
                     <input type="text" required/>
                     <label>연락처</label>
                 </div>
-
-                <!-- <input id="submitBtn" type="submit" value="처리" /> -->
                 <button class="submitBtn">처리</button>
             </form>
-        </footer>
+        </footer> -->
     </div>
 
     <script src="inputData.js"></script>
+    <script src="printNum.js"></script>
 </body>
 </html>
