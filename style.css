@@ -250,26 +250,57 @@ input:focus ~ span, input:valid ~ span {
 body {
   overflow: hidden;
   font-family: 'NPSfontBold';
-  
+  padding: 40px;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(bgImg2.png);
+}
+
+a {
+  text-decoration: none;
+  color: #3317d1;
 }
 
 .table {
-  width: 80%;
-  padding-left: 250px;
+  width: 100%;
+  padding: 0 130px 130px;
 }
 
 .table_header {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
+  background-color: #EAEAEA;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.header_logo {
+  font-size: 30px;
+}
+
+.header_totalNum {
+  display: flex;
+  list-style: none;
+}
+
+.header_totalNum li {
+  padding: 8px 12px;
+}
+
+.header_group {
+  list-style: none;
+  display: flex;
+}
+
+.header_group i {
+  padding: 8px 12px;
 }
 
 .table_header p {
   color: #3317d1;
   font-size: 40px;
-
 }
 
 button {
@@ -315,7 +346,9 @@ input {
 .table_section {
   height: 700px;
   overflow: auto;
-  padding-top: 100px;
+  padding: 100px 20px 0 20px;
+
+  /* box-shadow: inset; */
 }
 
 table {
@@ -323,12 +356,13 @@ table {
   table-layout: fixed;
   min-width: 900px;
   border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 thead th {
   position: sticky;
   top: 0;
-  background-color: #f6f9fc;
+  background-color: #f1f4f7;
   color: #8493a5;
   font-size: 15px;
 }
@@ -338,6 +372,7 @@ th, td {
   padding: 10px 20px;
   word-break: break-all;
   text-align: center;
+  background-color: #ffffff;
 }
 
 tr:hover td {
@@ -365,4 +400,24 @@ tr:hover td {
 
 #result {
   color: #0298cf;
+}
+
+table tr:last-child th:first-child {
+  /* border: 2px solid orange; */
+  border-top-left-radius: 10px;
+}
+
+table tr:last-child th:last-child {
+  /* border: 2px solid green; */
+  border-top-right-radius: 10px;
+}
+
+table tr:last-child td:first-child {
+  /* border: 2px solid orange; */
+  border-bottom-left-radius: 10px;
+}
+  
+table tr:last-child td:last-child {
+  /* border: 2px solid green; */
+  border-bottom-right-radius: 10px;
 }
