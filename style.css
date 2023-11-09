@@ -235,9 +235,15 @@ input:focus ~ span, input:valid ~ span {
 /* new design */
 
 @font-face {
-  font-family: 'NPSfontBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
-  font-weight: 700;
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -249,14 +255,18 @@ input:focus ~ span, input:valid ~ span {
 
 body {
   overflow: hidden;
-  font-family: 'NPSfontBold';
+  font-family: 'GmarketSansMedium';
   padding: 40px;
   background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(bgImg2.png);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 128, 0.1);
+  opacity: 0.9;
 }
 
 a {
   text-decoration: none;
-  color: #3317d1;
+  color: #706a6a;
+  padding-left: 10px;
 }
 
 .table {
@@ -271,18 +281,19 @@ a {
   align-items: center;
   padding: 20px;
   /* background-color: rgb(240, 240, 240); */
-  background-color: #EAEAEA;
+  background-color: #ebebeb;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   border-radius: 8px;
 }
 
 .header_logo {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .header_totalNum {
   display: flex;
   list-style: none;
+  font-size: 22px;
 }
 
 .header_totalNum li {
@@ -299,7 +310,7 @@ a {
 }
 
 .table_header p {
-  color: #3317d1;
+  color: rgb(138, 209, 23);
   font-size: 40px;
 }
 
@@ -313,34 +324,34 @@ button {
 }
 
 td button:nth-child(1) {
-  background-color: #0298cf;
+  background-color: #3e97b8;
 }
 td button:nth-child(2) {
-  background-color: #0298cf;
+  background-color: #3e97b8;
 }
 td button:nth-child(3) {
-  background-color: #0298cf;
+  background-color: #3e97b8;
 }
 td button:nth-child(4) {
-  background-color: #0298cf;
+  background-color: #3e97b8;
 }
 td button:nth-child(5) {
-  background-color: #0298cf;
+  background-color: #3e97b8;
 }
 
 .add_new {
   padding: 10px 20px;
   color: #ffff;
-  background-color: blue;
+  background-color: rgb(16, 47, 114);
 }
 
 input {
   padding: 10px 20px;
   margin: 0 10px;
   outline: none;
-  border: 1px solid #0298cf;
+  border: 1px solid rgb(16, 47, 114);
   border-radius: 6px;
-  color: #0298cf;
+  color: rgb(16, 47, 114);
 }
 
 .table_section {
@@ -367,9 +378,13 @@ thead th {
   font-size: 15px;
 }
 
+tbody {
+  font-size: 15px;
+}
+
 th, td {
   border-bottom: 1px solid #dddddd;
-  padding: 10px 20px;
+  padding: 10px 15px;
   word-break: break-all;
   text-align: center;
   background-color: #ffffff;
@@ -420,4 +435,47 @@ table tr:last-child td:first-child {
 table tr:last-child td:last-child {
   /* border: 2px solid green; */
   border-bottom-right-radius: 10px;
+}
+
+.header_group button {
+  display: flex;
+  background-color: #c9ccce;
+  width: 47px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.A:hover {
+  background-color: #0298cf;
+}
+.B:hover {
+  background-color: #0298cf;
+}
+.C:hover {
+  background-color: #0298cf;
+}
+.D:hover {
+  background-color: #0298cf;
+}
+
+#wrap {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 110px;
+  bottom: 0px;
+  position: absolute;
+}
+
+.plusLost, .addForm{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  bottom: 50px;
 }

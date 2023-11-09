@@ -1,5 +1,12 @@
-const table = document.querySelector("table");
-const totalNum = table.rows.length - 1;
+const tablet = document.querySelector("#table");
 
-result.innerText += "총 : " + totalNum;
-console.log(totalNum);
+function refresh(){
+    let totalNum = tablet.rows.length - 1;
+
+    total.innerText += ' ' + totalNum;
+}
+
+
+let btnAdd1 = document.querySelector('.add_new');
+
+btnAdd1.addEventListener('click', refresh());
